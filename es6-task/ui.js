@@ -15,7 +15,7 @@ class UI {
         `;
 
         this.table.appendChild(elem);
-        this.showMessage("Task has been added", "alert-sucess");
+        this.showMessage("Task has been added", "alert-success");
     }
 
     showMessage(body, type) {
