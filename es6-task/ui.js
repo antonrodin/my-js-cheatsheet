@@ -11,7 +11,7 @@ class UI {
             <td>${task.title}</td>
             <td>${task.time}</td>
             <td>${task.priority}</td>
-            <td><a class="btn btn-danger">Remove</a></td>
+            <td><a class="btn btn-danger remove-task">Remove</a></td>
         `;
 
         this.table.appendChild(elem);

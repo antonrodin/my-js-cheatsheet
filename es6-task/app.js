@@ -3,6 +3,16 @@ const app = cs('app');
 const formUI = cs('task-form');
 const ui = new UI(table, app);
 
+table.addEventListener('click', e => {
+    e.preventDefault();
+
+    if(e.target.classList.contains('remove-task')) {
+        LStorage.removeRecord('tasks', e.target.parentElement.parentElement.firstElementChild.textContent);
+        e.target.parentElement.parentElement.remove();
+    }
+    
+});
+
 formUI.addEventListener('submit', e => {
     e.preventDefault();
 

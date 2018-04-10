@@ -18,12 +18,13 @@ class LStorage {
         localStorage.setItem(key, JSON.stringify(records));
     }
 
-    //The ID of records is the TITLE
+    // The ID of records is the TITLE
+    // Search for element.title and if found, remove from array
     static removeRecord(key, value) {
         
         const records = LStorage.getAll(key);
-        records.array.forEach(function (element, index) {
-            if(element.title === value.title) {
+        records.forEach(function (element, index) {
+            if(element.title === value) {
                 records.splice(index, 1);
             }
         });
