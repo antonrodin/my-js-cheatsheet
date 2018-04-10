@@ -21,7 +21,7 @@ class LStorage {
     // The ID of records is the TITLE
     // Search for element.title and if found, remove from array
     static removeRecord(key, value) {
-        
+    
         const records = LStorage.getAll(key);
         records.forEach(function (element, index) {
             if(element.title === value) {
