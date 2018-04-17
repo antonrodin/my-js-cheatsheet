@@ -73,3 +73,13 @@ re = /Hello/;
 let str = "John Hello there"
 let result = str.replace(re, 'hi');     // Returns the new string, 'John hi there'
 console.log(result);
+
+
+// Example of functions
+// *********************
+
+// Validate ZIP Code or "Código postal"
+re = /^[0-9]{5}$/;
+
+// Validate Name, between 2 and 10 alphanumeric characters
+re = /^[a-zA-Z]{2,10}$/;
