@@ -2,7 +2,7 @@ function largestOfFour(arr) {
     
     let maxArr = new Array();
     arr.forEach(xElem => {
-        let max = xElem.pop();
+        let max = xElem.shift();
         xElem.forEach(yElem => {
             if(yElem > max) { max = yElem; }
         });
